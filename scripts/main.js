@@ -25,6 +25,7 @@ const departments = {
             },
         ],
     },
+
     sales: {
         description: "Sales omvat activiteiten en strategieën die gericht zijn op het genereren van omzet door het verkopen van producten, diensten of oplossingen aan klanten. Het draait om het opbouwen van relaties, het identificeren van klantbehoeften en het overtuigend communiceren van de waarde en voordelen van een product of dienst aan potentiële kopers. Verkoopprofessionals spelen een cruciale rol bij het stimuleren van bedrijfsgroei en het behalen van omzetdoelstellingen. Ze zoeken naar en kwalificeren leads, hebben directe interacties met klanten, onderhandelen over contracten en sluiten deals.",
         numberOfEmployees: 23,
@@ -72,3 +73,56 @@ const departments = {
 }
 
 console.log(departments);
+
+// Opdracht 1
+console.log("De afdeling Sales heeft " + departments.sales.numberOfEmployees + " medewerkers.");
+console.log("Marketing is een leuke afdeling om te werken. " + departments.marketing.description);
+console.log("De afdeling Customer Service heeft" + departments["customer-service"].numberOfEmployees + " medewerkers.");
+console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager. " + departments.sales.jobs[1].description);
+
+//Opdracht 2
+const userInput = prompt("Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service].");
+console.log(userInput);
+switch (userInput) {
+    case "marketing":
+        console.log("Je koos marketing. " + departments.marketing.description);
+        break;
+    case "sales":
+        console.log("Je koos sales. " + departments.sales.description);
+        break;
+    case "customers":
+        console.log("Je koos customer-service. " + departments["customer-service"].description);
+        break;
+    default:
+        console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
+}
+
+//Opdracht 3
+// const userInput = prompt("Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 4 in.")
+// console.log(userInput);
+// switch (userInput) {
+//     case "0":
+//         console.log("Je koos " + departments.marketing.jobs[0].title + ". Een uitdagende rol! " + departments.marketing.jobs[0].description);
+//         break;
+//     case "1":
+//         console.log("Je koos " + departments.marketing.jobs[1].title + ". Een uitdagende rol! " + departments.marketing.jobs[1].description);
+//         break;
+//     case "2":
+//         console.log("Je koos " + departments.marketing.jobs[2].title + ". Een uitdagende rol! " + departments.marketing.jobs[2].description);
+//         break;
+//     case "3":
+//         console.log("Je koos " + departments.marketing.jobs[3].title + ". Een uitdagende rol! " + departments.marketing.jobs[3].description);
+//         break;
+//     case "4":
+//         console.log("Je koos " + departments.marketing.jobs[4].title + ". Een uitdagende rol! " + departments.marketing.jobs[4].description);
+//         break;
+//     default:
+//         console.error("Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.");
+// }
+
+//Opdracht 4
+const userOutput = userInput;
+const myVar = "numberOfEmployees";
+console.log(userOutput);
+// const myVar = numberOfEmployees
+console.log(userInput + " is een leuke afdeling om te werken Er werken op dit moment " + userInput[myVar] + " medewerkers.");
