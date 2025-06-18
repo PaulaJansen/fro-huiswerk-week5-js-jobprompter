@@ -100,7 +100,7 @@ switch (departmentChoice) {
 document.getElementById('department-description').textContent = departments[departmentChoice].description;
 
 // Opdracht 3
-// const jobChoice = prompt("Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 4 in.")
+// const jobChoice = prompt("Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 4 in. + departments.marketing.jobs[0].title + ", 1: " +  departments.marketing.jobs[1].title + ", 2: " +  departments.marketing.jobs[2].title + ", 3: " +  departments.marketing.jobs[3].title + ", 4: " + departments.marketing.jobs[4].title + "."")
 // console.log(jobChoice);
 // switch (jobChoice) {
 //     case "0":
